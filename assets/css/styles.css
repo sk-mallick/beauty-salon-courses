@@ -465,3 +465,29 @@ img {
         padding-left: 0cm;
     }
 }
+.modal-content {
+    max-height: 85vh;              /* Default: works well on iPhone */
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+  }
+  
+  /* For larger screens (e.g., tablets, desktops) */
+  @media screen and (min-width: 968px) {
+    .modal-content {
+      max-height: 82vh;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .modal-content {
+      max-height: 80vh;
+    }
+  }
+  
+  /* For very small phones */
+  @media screen and (max-width: 360px) {
+    .modal-content {
+      max-height: 75vh;
+    }
+  }
+  
